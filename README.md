@@ -22,3 +22,6 @@ further updates** are planned to the Type 1 distribution; future
 development efforts will focus on improving the OpenType fonts.
 Patches to the existing Type 1 distribution are welcome and, pending
 review, will be incorporated into the distribution.
+
+For ease of installation a zip file with a [TDS-compliant](tds.zip)
+directory structure is included.
