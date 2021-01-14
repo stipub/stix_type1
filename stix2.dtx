@@ -1,47 +1,8 @@
-% \iffalse
-%<*driver>
-\begingroup
-\input docstrip
-\keepsilent
-\askforoverwritefalse
-
-\preamble
-
-Copyright (c) 2001-2018 by the STI Pub Companies, consisting of the
-American Chemical Society, the American Institute of Physics, the American
-Mathematical Society, the American Physical Society, Elsevier, Inc., and
-The Institute of Electrical and Electronic Engineers, Inc. Portions
-copyright (c) 1998-2003 by MicroPress, Inc. Portions copyright (c) 1990 by
-Elsevier, Inc. All rights reserved.
-
-This work may be distributed and/or modified under the conditions of the LaTeX
-Project Public License, either version 1.3 of this license or (at your option)
-any later version.  The latest version of this license is in
-  http://www.latex-project.org/lppl.txt
-and version 1.3 or later is part of all distributions of LaTeX version
-2005/12/01 or later.
-
-This work has the LPPL maintenance status `maintained'.
-
-The Current Maintainer of this work is the STI Pub Companies.
-
-This work consists of the files stix2.dtx and and the derived file stix2.sty.
-
-\endpreamble
-
-\generate{\file{stix2.sty}{\from{stix2.dtx}{package}}}
-
-\endgroup
-\ProvidesFile{stix2.dtx}
-%</driver>
-%<package>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
-%<package>\ProvidesPackage{stix2}
-%<*package>
-    [2018/04/02 v2.0.0-latex STIX Two fonts support package]
-%</package>
-%<package>\global\expandafter\let\csname ver@stix.sty\expandafter
-%<package>  \endcsname\csname ver@\@currname.\@currext\endcsname
+% \def\filename{stix2.dtx}
+% \def\fileversion{2.0.1}
+% \def\filedate{2021/01/14}
 %
+% \iffalse
 %<*driver>
 \documentclass{ltxdoc}
 \usepackage[lcgreekalpha]{stix2}[2018/04/02]
@@ -97,7 +58,12 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
   \makebox[5em][l]{$#1{xxxxxx}$}\makebox[3.5em][l]{\small\cmd{U+#2}} \cmd{#1}$^{#3}$}
 
 \begin{document}
-  \DocInput{stix2.dtx}
+\title{The \pkg{stix2} package}
+\author{STI Pub Companies\thanks{This package was developed by Khaled
+    Hosny on behalf of the STI Pub companies, who gratefully
+    acknowledge his efforts.}}
+\date{Version \fileversion, \filedate}
+\DocInput{stix2.dtx}
 \end{document}
 %</driver>
 % \fi
@@ -118,15 +84,6 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 %   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %   Right brace   \}     Tilde         \~}
 %
-%
-% \GetFileInfo{stix2.dtx}
-%
-% \title{The \pkg{stix2} package}
-% \author{STI Pub Companies\thanks{This package was developed by
-% Khaled Hosny on behalf of the STI Pub companies, who gratefully
-% acknowledge his efforts.}}
-% \date{\fileversion~from \filedate}
-%
 % \maketitle
 % \tableofcontents
 %
@@ -137,7 +94,8 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % Unicode and modern font technologies.  When used with one of these
 % engines, no extra support is needed beyond the \pkg{unicode-math}
 % package.  This is the recommended way of using the STIX fonts with
-% \TeX.
+% \TeX.  The most recent version of the STIX fonts can be found at
+% \url{https://github.com/stipub/stixfonts}.
 %
 % The \pkg{stix2} package provides support for versions of \TeX\ that
 % are limited to TFM files, Type~1 PostScript fonts, and 8-bit font
@@ -150,8 +108,9 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % yet available in the STIX Two OpenType fonts.  In such cases, we
 % have chosen to omit them from the stix2 package rather than create
 % incompatibilities between the OpenType and Type~1 versions.  In
-% addition, while development of the OpenType versions is ongoing, no
-% further updates are planned to the Type~1 versions of the fonts.
+% addition, \textbf{while development of the OpenType versions is
+% ongoing, no further updates are planned to the Type~1
+% versions of the fonts}.
 %
 % The \pkg{stix2} package provides support for text fonts in the
 % following \LaTeX\ encodings:
@@ -198,10 +157,13 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % production process, whether that be a traditional print-only process,
 % an entirely electronic one, or a combination of the two.
 %
-% The STIX project began through the joint efforts of American
-% Mathematical Society (AMS), American Institute of Physics (AIP),
-% American Physical Society (APS), American Chemical Society (ACS),
-% Institute of Electrical and Electronic Engineers (IEEE), and Elsevier.
+% The STIX project began through the joint efforts of
+%     AIP Publishing,
+%     American Chemical Society,
+%     American Mathematical Society,
+%     American Physical Society,
+%     Elsevier, Inc., and
+%     The Institute of Electrical and Electronic Engineers.
 % These companies are collectively known as the STI Pub companies.
 %
 % \section{Usage}
@@ -236,7 +198,7 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % \subsection{Compatibility with other packages}
 % \subsubsection*{\pkg{amsmath}}
 % The \pkg{stix2} package should be used with at least \pkg{amsmath} v2.14,
-% \pkg{amssymb} v3.01 and \pkg{amsfonts} v3.01.
+% \pkg{amssymb} v3.01, and \pkg{amsfonts} v3.01.
 %
 % With \pkg{amsmath} v2.14 or newer, it is recommended to load it (and/or
 % packages that load it) \emph{after} the \pkg{stix2} package. Older versions of
@@ -248,8 +210,7 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % |sumlimits|, |nosumlimits|, |intlimits| and |nointlimits|.
 %
 % \subsection{Feedback}
-% Bug reports and technical support issues should be reported to
-% \url{https://github.com/stipub/stixfonts}.
+% See \url{https://github.com/stipub/stix_type1}.
 %
 % \section{Math alphabets}
 % \label{math-alphabets}
@@ -1909,6 +1870,14 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % \iffalse
 %<*package>
 % \fi
+%
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesPackage{stix2}[2021/01/14 v2.0.1-latex STIX Two fonts support package]
+
+\global\expandafter\let\csname ver@stix.sty\expandafter
+  \endcsname\csname ver@\@currname.\@currext\endcsname
+%    \end{macrocode}
 %
 % \subsection{Package options}
 %
@@ -4240,7 +4209,7 @@ This work consists of the files stix2.dtx and and the derived file stix2.sty.
 % does this already, so we just use it.
 %
 %    \begin{macrocode}
-\def\stix@dotlessi{\ifmmode\imath\else\i}
+\def\stix@dotlessi{\ifmmode\imath\else\if}
 \@ifundefined{es@dotlessi}{}{\let\es@dotlessi\stix@dotlessi}
 
 \fi

@@ -33,3 +33,5 @@ v2.0.0a fixes a problem in the TeX font metrics file for stix2-mathcal
 outside of this README file were to the files stix2-mathcal.tfm and
 stix2-mathcal.pl.
 
+v2.0.1 fixes one bug (https://github.com/stipub/stixfonts/issues/144)
+and makes some small updates to the documentation.

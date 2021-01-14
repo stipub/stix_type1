@@ -1,0 +1,6 @@
+stix2.sty
+*.log
+*.aux
+*.dvi
+*.out
+*.toc
