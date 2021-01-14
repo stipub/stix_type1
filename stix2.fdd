@@ -32,6 +32,8 @@ ot2stix2.fd, t1stix2.fd, ts1stix2.fd.
 
 \endpreamble
 
+\usedir{tex/latex/stix2}
+
 \generate{\file{ls1stix2.fd}{\from{stix2.fdd}{ls1stix2}}}
 \generate{\file{ls1stix2bb.fd}{\from{stix2.fdd}{ls1stix2bb}}}
 \generate{\file{ls1stix2frak.fd}{\from{stix2.fdd}{ls1stix2frak}}}
