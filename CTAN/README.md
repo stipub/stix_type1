@@ -35,3 +35,5 @@ stix2-mathcal.pl.
 
 v2.0.1 fixes one bug (https://github.com/stipub/stixfonts/issues/144)
 and makes some small updates to the documentation.
+
+v2.0.2 fixes a bug (actually, two bugs) in the previous patch.

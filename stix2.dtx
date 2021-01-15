@@ -1,5 +1,5 @@
 % \def\filename{stix2.dtx}
-% \def\fileversion{2.0.1}
+% \def\fileversion{2.0.2}
 % \def\filedate{2021/01/14}
 %
 % \iffalse
@@ -1873,7 +1873,7 @@
 %
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
-\ProvidesPackage{stix2}[2021/01/14 v2.0.1-latex STIX Two fonts support package]
+\ProvidesPackage{stix2}[2021/01/14 v2.0.2-latex STIX Two fonts support package]
 
 \global\expandafter\let\csname ver@stix.sty\expandafter
   \endcsname\csname ver@\@currname.\@currext\endcsname
@@ -4209,7 +4209,7 @@
 % does this already, so we just use it.
 %
 %    \begin{macrocode}
-\def\stix@dotlessi{\ifmmode\imath\else\if}
+\def\stix@dotlessi{\ifmmode\imath\else\i\fi}
 \@ifundefined{es@dotlessi}{}{\let\es@dotlessi\stix@dotlessi}
 
 \fi
